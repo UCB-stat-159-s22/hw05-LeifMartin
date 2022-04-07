@@ -1,0 +1,6 @@
+name: ligo
+dependencies: #What libraries were included, was selected from "runtime.txt" and "requirements.txt" from the ligo  github repo.
+  - python=2.7
+  - matplotlib=0.1.2 #Aquired by running "!conda list" in the index notebook through binder.
+  - scipy=1.7.3      #Simple guess thus far.
+  - h5py=2.10.0      #Aquired by running "print(h5py.__version__)" in the index notebook through binder.
