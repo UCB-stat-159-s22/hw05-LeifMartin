@@ -1,6 +1,22 @@
 name: ligo
+channels:
+  - conda-forge
+
 dependencies: #What libraries were included, was selected from "runtime.txt" and "requirements.txt" from the ligo  github repo.
-  - python=2.7
-  - matplotlib=0.1.2 #Aquired by running "!conda list" in the index notebook through binder.
-  - scipy=1.7.3      #Simple guess thus far.
-  - h5py=2.10.0      #Aquired by running "print(h5py.__version__)" in the index notebook through binder.
+  - python=2.7 #.15    #Aquired by "from platform import python_version" and "python_version()" in the index notebook through binder.
+  - matplotlib=2.2 #.5 #Aquired by "import matplotlib as matplotlib" and then "print(matplotlib.__version__)" in the index notebook through binder.
+  - scipy=1.2 #.3      #Aquired by "import scipy as scipy" and then "print(scipy.__version__)" in the index notebook through binder.
+  - h5py=2.10 #.0      #Aquired by "print(h5py.__version__)" in the index notebook through binder.
+  - decorator=4.4 #.2  #Aquired by "import decorator as decorator" and then "print(decorator.__version__)" in the index notebook through binder.
+  - ipython=5.8 #.0    # !conda env export in index.ipynb from binder.
+  - ipykernel=4.8 #.2 # !conda env export in index.ipynb from binder.
+
+
+#  - nbconvert=6.0 #.7
+#  - ipywidgets=7.6 #.3
+#  - jupyter core=4.7.1
+#  - jupyter-notebook=6.3.0
+#  - nbformat=5.1.3
+#  - traitlets=5.0.5
+
+#You can use mamba for everything except activating and deactivating envs.
