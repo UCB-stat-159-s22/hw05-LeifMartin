@@ -1,3 +1,4 @@
+#The pykernel was renamed to "python2".
 name: ligo
 channels:
   - conda-forge
